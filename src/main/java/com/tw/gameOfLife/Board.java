@@ -68,10 +68,10 @@ public class Board {
         if (obj == this) return true;
         if (!(obj instanceof Board)) return false;
         Board other = (Board) obj;
-        return other.boardSize == boardSize && isCellsEqual(other);
+        return other.boardSize == boardSize && AreCellsEqual(other);
     }
 
-    private boolean isCellsEqual(Board other) {
+    private boolean AreCellsEqual(Board other) {
         for (int row = 0; row < boardSize; row++) {
             for (int column = 0; column < boardSize; column++) {
                 if (cells[row][column] != other.cells[row][column]) return false;

@@ -22,17 +22,22 @@ public class BoardTest {
 //        1, 2
 //        2, 1
 //        2, 2
-        ArrayList<Cell> aliveCells = new ArrayList<>();
-        aliveCells.add(new Cell(1, 1));
-        aliveCells.add(new Cell(1, 2));
-        aliveCells.add(new Cell(2, 1));
-        aliveCells.add(new Cell(2, 2));
-        ArrayList<Cell> nextGenerationAliveCells = new ArrayList<>();
-        nextGenerationAliveCells.add(new Cell(1, 1));
-        nextGenerationAliveCells.add(new Cell(1, 2));
-        nextGenerationAliveCells.add(new Cell(2, 1));
-        nextGenerationAliveCells.add(new Cell(2, 2));
-
+        ArrayList<Cell> aliveCells = new ArrayList<Cell>() {
+            {
+                new Cell(1, 1);
+                new Cell(1, 2);
+                new Cell(2, 1);
+                new Cell(2, 2);
+            }
+        };
+        ArrayList<Cell> nextGenerationAliveCells = new ArrayList<Cell>() {
+            {
+                new Cell(1, 1);
+                new Cell(1, 2);
+                new Cell(2, 1);
+                new Cell(2, 2);
+            }
+        };
         Board gameOfLifeBoard = new Board(aliveCells);
         Board nextGenerationBoard = new Board(nextGenerationAliveCells);
 
@@ -56,19 +61,24 @@ public class BoardTest {
 //        2, 1
 //        0, 2
 //        1, 2
-        ArrayList<Cell> aliveCells = new ArrayList<>();
-        aliveCells.add(new Cell(0, 1));
-        aliveCells.add(new Cell(1, 0));
-        aliveCells.add(new Cell(2, 1));
-        aliveCells.add(new Cell(0, 2));
-        aliveCells.add(new Cell(1, 2));
-        ArrayList<Cell> nextGenerationAliveCells = new ArrayList<>();
-        nextGenerationAliveCells.add(new Cell(0, 1));
-        nextGenerationAliveCells.add(new Cell(1, 0));
-        nextGenerationAliveCells.add(new Cell(2, 1));
-        nextGenerationAliveCells.add(new Cell(0, 2));
-        nextGenerationAliveCells.add(new Cell(1, 2));
-
+        ArrayList<Cell> aliveCells = new ArrayList<Cell>() {
+            {
+                new Cell(0, 1);
+                new Cell(1, 0);
+                new Cell(2, 1);
+                new Cell(0, 2);
+                new Cell(1, 2);
+            }
+        };
+        ArrayList<Cell> nextGenerationAliveCells = new ArrayList<Cell>() {
+            {
+                new Cell(0, 1);
+                new Cell(1, 0);
+                new Cell(2, 1);
+                new Cell(0, 2);
+                new Cell(1, 2);
+            }
+        };
         Board gameOfLifeBoard = new Board(aliveCells);
         Board nextGenerationBoard = new Board(nextGenerationAliveCells);
 
@@ -89,15 +99,20 @@ public class BoardTest {
 //        1, 1
 //        0, 1
 //        2, 1
-        ArrayList<Cell> aliveCells = new ArrayList<>();
-        aliveCells.add(new Cell(1, 1));
-        aliveCells.add(new Cell(1, 0));
-        aliveCells.add(new Cell(1, 2));
-        ArrayList<Cell> nextGenerationAliveCells = new ArrayList<>();
-        nextGenerationAliveCells.add(new Cell(1, 1));
-        nextGenerationAliveCells.add(new Cell(0, 1));
-        nextGenerationAliveCells.add(new Cell(2, 1));
-
+        ArrayList<Cell> aliveCells = new ArrayList<Cell>() {
+            {
+                new Cell(1, 1);
+                new Cell(1, 0);
+                new Cell(1, 2);
+            }
+        };
+        ArrayList<Cell> nextGenerationAliveCells = new ArrayList<Cell>() {
+            {
+                new Cell(1, 1);
+                new Cell(0, 1);
+                new Cell(2, 1);
+            }
+        };
         Board gameOfLifeBoard = new Board(aliveCells);
         Board nextGenerationBoard = new Board(nextGenerationAliveCells);
 
@@ -123,21 +138,26 @@ public class BoardTest {
 //        2, 1
 //        2, 4
 //        3, 3
-        ArrayList<Cell> aliveCells = new ArrayList<>();
-        aliveCells.add(new Cell(1, 1));
-        aliveCells.add(new Cell(1, 2));
-        aliveCells.add(new Cell(1, 3));
-        aliveCells.add(new Cell(2, 2));
-        aliveCells.add(new Cell(2, 3));
-        aliveCells.add(new Cell(2, 4));
-        ArrayList<Cell> nextGenerationAliveCells = new ArrayList<>();
-        nextGenerationAliveCells.add(new Cell(0, 2));
-        nextGenerationAliveCells.add(new Cell(1, 1));
-        nextGenerationAliveCells.add(new Cell(1, 4));
-        nextGenerationAliveCells.add(new Cell(2, 1));
-        nextGenerationAliveCells.add(new Cell(2, 4));
-        nextGenerationAliveCells.add(new Cell(3, 3));
-
+        ArrayList<Cell> aliveCells = new ArrayList<Cell>() {
+            {
+                new Cell(1, 1);
+                new Cell(1, 2);
+                new Cell(1, 3);
+                new Cell(2, 2);
+                new Cell(2, 3);
+                new Cell(2, 4);
+            }
+        };
+        ArrayList<Cell> nextGenerationAliveCells = new ArrayList<Cell>() {
+            {
+                new Cell(0, 2);
+                new Cell(1, 1);
+                new Cell(1, 4);
+                new Cell(2, 1);
+                new Cell(2, 4);
+                new Cell(3, 3);
+            }
+        };
         Board gameOfLifeBoard = new Board(aliveCells);
         Board nextGenerationBoard = new Board(nextGenerationAliveCells);
 
